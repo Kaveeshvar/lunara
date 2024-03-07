@@ -58,7 +58,8 @@ html {
 body {
     margin: 0;
     line-height: inherit;
-    scroll-behavior: smooth !important; /* Enable smooth scrolling */
+    scroll-behavior: smooth !important;
+    /* Enable smooth scrolling */
 }
 
 hr {
@@ -1081,7 +1082,9 @@ input[type=range]::-moz-focus-outer {
     margin-left: auto;
     margin-right: auto
 }
-
+.c2n63{
+    margin: 35vh 0 0 0;
+}
 .c60i6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem
@@ -1479,7 +1482,11 @@ input[type=range]::-moz-focus-outer {
 }
 
 .c25y8 {
-    border-bottom-width: 1px
+    border-bottom-width: .5px;
+    border-color:#3a374988 !important;
+    width: 60vw !important;
+    display: flex;
+    padding: 0 0 0 20vh;
 }
 
 .c0lzx {
@@ -1699,7 +1706,7 @@ input[type=range]::-moz-focus-outer {
 
 .cv5m6 {
     padding-top: 8rem;
-    min-height: 100vh !important;
+    min-height: 78vh !important;
 }
 
 .czfa1 {
@@ -2165,7 +2172,11 @@ input[type=range]::-moz-focus-outer {
     --tw-text-opacity: 1;
     color: rgb(209 213 219/var(--tw-text-opacity))
 }
-
+.chboh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width:640px) {
     .cib5z {
         grid-column: span 12/span 12
@@ -2424,8 +2435,9 @@ section#timeline {
     width: 90%;
     margin: 20px auto;
     position: relative;
-  }
-  section#timeline:before {
+}
+
+section#timeline:before {
     content: '';
     display: block;
     position: absolute;
@@ -2434,25 +2446,29 @@ section#timeline {
     margin: 0 0 0 -1px;
     width: 2px;
     height: 100%;
-    background: rgba(255,255,255,0.2);
-  }
-  section#timeline article {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+section#timeline article {
     width: 100%;
     margin: 0 0 20px 0;
     position: relative;
-  }
-  section#timeline article:after {
+}
+
+section#timeline article:after {
     content: '';
     display: block;
     clear: both;
-  }
-  section#timeline article div.inner {
+}
+
+section#timeline article div.inner {
     width: 40%;
     float: left;
     margin: 5px 0 0 0;
     border-radius: 6px;
-  }
-  section#timeline article div.inner span.date {
+}
+
+section#timeline article div.inner span.date {
     display: block;
     width: 70px;
     height: 60px;
@@ -2466,24 +2482,29 @@ section#timeline {
     font-weight: 900;
     text-transform: uppercase;
     background: #25303B;
-    color: rgba(255,255,255,0.5);
-    border: 2px solid rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 0 7px #25303B;
-  }
-  section#timeline article div.inner span.date span {
+}
+
+section#timeline article div.inner span.date span {
     display: block;
     text-align: center;
-  }
-  section#timeline article div.inner span.date span.day {
+}
+
+section#timeline article div.inner span.date span.day {
     font-size: 10px;
-  }
-  section#timeline article div.inner span.date span.month {
+}
+
+section#timeline article div.inner span.date span.month {
     font-size: 13px;
-  }
-  section#timeline article div.inner span.date span.year {
+}
+
+section#timeline article div.inner span.date span.year {
     font-size: 10px;
-  }
-  section#timeline article div.inner h2 {
+}
+
+section#timeline article div.inner h2 {
     padding: 15px;
     margin: 0;
     color: #fff;
@@ -2492,19 +2513,21 @@ section#timeline {
     letter-spacing: 1px;
     border-radius: 6px 6px 0 0;
     position: relative;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-  }
-  section#timeline article div.inner h2:after {
+}
+
+section#timeline article div.inner h2:after {
     content: '';
     position: absolute;
     top: 20px;
     right: -5px;
-        width: 10px; 
-        height: 10px;
+    width: 10px;
+    height: 10px;
     -webkit-transform: rotate(-45deg);
-  }
-  section#timeline article div.inner p {
+}
+
+section#timeline article div.inner p {
     padding: 15px;
     margin: 0;
     font-size: 14px;
@@ -2514,22 +2537,40 @@ section#timeline {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.6px);
     -webkit-backdrop-filter: blur(8.6px);
-  }
-  section#timeline article:nth-child(2n+2) {
+}
+
+section#timeline article:nth-child(2n+2) {
     padding-left: 5px !important;
-  }
-  section#timeline article:nth-child(2n+2) div.inner {
+}
+
+section#timeline article:nth-child(2n+2) div.inner {
     float: right;
-  }
-  section#timeline article:nth-child(2n+2) div.inner h2:after {
+}
+
+section#timeline article:nth-child(2n+2) div.inner h2:after {
     left: -5px;
-  }
-  section#timeline article:nth-child(1) div.inner h2 {
+}
+
+section#timeline article:nth-child(1) div.inner h2 {
     background: #e74d3c47;
-  }
-  section#timeline article:nth-child(2) div.inner h2 {
+}
+
+section#timeline article:nth-child(2) div.inner h2 {
     background: #2ecc7057;
-  }
-  section#timeline article:nth-child(3) div.inner h2 {
+}
+
+section#timeline article:nth-child(3) div.inner h2 {
     background: #e67d2263;
-  }
+}
+
+/* Clock */
+
+.clock-container {
+    align-items: center;
+    font-size: 50px;
+    margin: 5vh 0 0 0;
+}
+.clock-container h1 {
+    padding: 0 0 5vh 0;
+    text-align: center;
+}
